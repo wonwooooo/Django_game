@@ -154,7 +154,8 @@ function verifie_password(obj){
 					obj.find(' input[type=button]').click({mail: mail.val(), prod: obj.parents('.modal').find('img').attr('alt'), objet: obj.find(' input[type=button]')}, processAchat);
 					mail.attr('disabled', 'disabled');
 					password.attr('disabled', 'disabled');
-					obj.find(" .modal-title").html("Acheter le Jeu");
+					obj.find(" .modal-title")
+					//.html("Acheter le Jeu");
 				}
 				else{
 					error.text(rep);
