@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: wonwooooodjangogame 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: wonwooooodjangogame
+  template:
+    metadata:
+      labels:
+        app: wonwooooodjangogame 
+    spec:
+      containers:
+        - name: wonwooooodjangogame 
+          image: wwtest1114cr.azurecr.io/wonwooooodjangogame
+          ports:
+          - containerPort: 8000
